@@ -1,0 +1,69 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact-styles.css">
+  <script src="contact-scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet"> 
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div class="a">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" >
+        <br>
+        <label for="comments">Comments</label>
+        <textarea style="resize:none" rows="6" id="comments" maxlength="500" minlength="20" name="comments"></textarea>
+    </div>
+    <div class="b">
+        <h4>How did you hear about me?</h4>
+        <div>
+          <input type="checkbox" name="classmate" id="classmate">
+          <label for="classmate">Classmate</label>
+        </div>
+        <div>
+          <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+          <label for="resumeSubmission">Resume Submission</label>
+        </div>
+        <div>
+          <input type="checkbox" name="linkedIn" id="linkedIn">
+          <label for="linkedIn">LinkedIn</label>
+        </div>
+        <div>
+          <input type="checkbox" name="caRec" id="caRec">
+          <label for="caRec">Coding Academy Rec</label>
+        </div>
+        </div>
+        <div class="c">
+        <h4>Would you like a response?</h4>
+        <section>
+          <input type="radio" name="contactBack" id="yes" value="yes">
+          <label for="yes">yes</label>
+          
+          <input type="radio"  name="contactBack" id="no" value="no">
+          <label for="no">no</label>
+        </section>
+    </div>
+    <div class="d">
+        <h4>Would you like a Birthday wish?</h4>
+        <label for="date"></label>
+        <input rows="2" type="date" name="date" id="date" min="2019-06-10">
+      </div>
+  <section class="btn">
+    <button class="btn1" type="reset">RESET</button>
+    <button class="btn2" onclick="validate()" type="submit">SUBMIT</button>
+  </section>
+  </form>
+  <!-- <script src="contact-scripts.js"></script> -->
+</body>
+</html>
